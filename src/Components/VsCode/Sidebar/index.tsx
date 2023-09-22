@@ -18,12 +18,12 @@ type VsCodeSidebarProps = {
 export function VsCodeSidebar({ routes }: VsCodeSidebarProps) {
   return (
     <div
-      className="h-screen max-h-[70vh] bg-vs-sidebar max-w-xs flex text-white"
+      className="flex h-screen max-h-[70vh] max-w-xs bg-vs-sidebar text-white"
       style={{
         gridArea: 'sidebar',
       }}
     >
-      <div className="border-r border-black px-2 py-3 bg-vs-sidebar-tabs flex flex-col gap-5">
+      <div className="flex flex-col gap-5 border-r border-black bg-vs-sidebar-tabs px-2 py-3">
         <File />
         <Search />
         <GitBranch />

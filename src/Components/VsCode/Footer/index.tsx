@@ -9,15 +9,15 @@ import {
 export function VsCodeFooter() {
   return (
     <div
-      className="w-full max-w-7xl bg-vs-footer text-white text-xs rounded-b-lg flex gap-1 items-center overflow-hidden"
+      className="flex w-full max-w-7xl items-center gap-1 overflow-hidden rounded-b-lg bg-vs-footer text-xs text-white"
       style={{
         gridArea: 'footer',
       }}
     >
-      <span className="bg-red-500 h-full flex items-center px-1">
+      <span className="flex h-full items-center bg-red-500 px-1">
         <ChevronsRightLeft size={14} />
       </span>
-      <span className="h-full flex items-center px-1 gap-1">
+      <span className="flex h-full items-center gap-1 px-1">
         <GitBranch size={14} />
         <span>main</span>
       </span>

@@ -12,7 +12,7 @@ export function VsCodeTopbar() {
 
   return (
     <div
-      className="w-full max-w-7xl bg-vs-topbar text-white rounded-t-lg px-3 flex gap-5 items-center capitalize"
+      className="flex w-full max-w-7xl items-center gap-5 rounded-t-lg bg-vs-topbar px-3 capitalize text-white"
       style={{
         gridArea: 'topbar',
       }}
@@ -23,7 +23,7 @@ export function VsCodeTopbar() {
         alt=""
       />
       {menus.map((menu, index) => (
-        <div key={index} className="flex gap-2 items-center">
+        <div key={index} className="flex items-center gap-2">
           <span className="text-base">{menu}</span>
         </div>
       ))}

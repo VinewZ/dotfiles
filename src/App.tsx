@@ -13,7 +13,7 @@ export function App() {
   ]
 
   return (
-    <div className="bg-gradient-to-br from-[#614385] to-[#516395] w-screen h-screen grid place-content-center">
+    <div className="grid h-screen w-screen place-content-center bg-gradient-to-br from-[#614385] to-[#516395]">
       <VsCode.Root>
         <VsCode.Topbar />
         <VsCode.Sidebar routes={routes} />
