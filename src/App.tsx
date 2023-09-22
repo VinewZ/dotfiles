@@ -1,38 +1,32 @@
-import { VsCode } from './Components/VsCode';
-import { Router } from './Pages/Router';
+import { VsCode } from './Components/VsCode'
+import { Router } from './Pages/Router'
 export function App() {
-
   const routes = [
     {
       path: '/',
-      name: 'Home'
+      name: 'Home',
     },
     {
       path: '/terminal',
-      name: 'Terminal'
-    }
+      name: 'Terminal',
+    },
   ]
 
   return (
-    <div className='bg-gradient-to-br from-[#614385] to-[#516395] w-screen h-screen grid place-content-center'>
+    <div className="bg-gradient-to-br from-[#614385] to-[#516395] w-screen h-screen grid place-content-center">
       <VsCode.Root>
-        <VsCode.Topbar/>
-        <VsCode.Sidebar
-          routes={routes}
-        />
+        <VsCode.Topbar />
+        <VsCode.Sidebar routes={routes} />
         <div
           style={{
-            gridArea: 'content'
+            gridArea: 'content',
           }}
         >
-          <VsCode.Content>
-            lésgo
-          </VsCode.Content>
+          <VsCode.Content>lésgo</VsCode.Content>
         </div>
-        <VsCode.Footer/>
+        <VsCode.Footer />
       </VsCode.Root>
-      <Router/>
+      <Router />
     </div>
-
   )
 }

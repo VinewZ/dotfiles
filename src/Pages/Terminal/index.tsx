@@ -1,8 +1,3 @@
-
 export function Terminal() {
-  return (
-  <div>
-    Terminal
-  </div>
-  );
+  return <div>Terminal</div>
 }
