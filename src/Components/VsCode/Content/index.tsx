@@ -3,7 +3,7 @@ import { ReactNode } from 'react'
 export function VsCodeContent({ children }: { children: ReactNode }) {
   return (
     <div
-      className="h-full w-full bg-vs-content px-4 text-white"
+      className="max-h-[70vh] w-full overflow-y-scroll bg-vs-content text-white"
       style={{
         gridArea: 'content',
       }}

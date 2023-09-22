@@ -17,16 +17,9 @@ export function App() {
       <VsCode.Root>
         <VsCode.Topbar />
         <VsCode.Sidebar routes={routes} />
-        <div
-          style={{
-            gridArea: 'content',
-          }}
-        >
-          <VsCode.Content>lésgo</VsCode.Content>
-        </div>
+        <Router />
         <VsCode.Footer />
       </VsCode.Root>
-      <Router />
     </div>
   )
 }
