@@ -4,11 +4,8 @@ export function App() {
   const routes = [
     {
       path: '/',
+      tab: 'home',
       name: 'Home',
-    },
-    {
-      path: '/terminal',
-      name: 'Terminal',
     },
   ]
 

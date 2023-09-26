@@ -18,7 +18,7 @@ type VsCodeSidebarProps = {
 export function VsCodeSidebar({ routes }: VsCodeSidebarProps) {
   return (
     <div
-      className="flex h-screen max-h-[70vh] max-w-xs bg-vs-sidebar text-white"
+      className="flex h-screen max-h-[70vh] bg-vs-sidebar text-white"
       style={{
         gridArea: 'sidebar',
       }}
@@ -31,12 +31,21 @@ export function VsCodeSidebar({ routes }: VsCodeSidebarProps) {
         <Blocks />
         <Bookmark />
       </div>
-      <div className="flex flex-col gap-2">
-        {routes.map((route) => (
-          <NavLink to={`${route.path}`} key={route.path}>
-            {route.name}
-          </NavLink>
-        ))}
+      <div className="w-full">
+        <p className="border-b border-black p-2">Explorer</p>
+        <div className="flex flex-col gap-2 pl-6">
+          {routes.map((route) => (
+            <NavLink
+              to={`${route.path}`}
+              key={route.path}
+              className={(isActive) =>
+                isActive ? 'text-yellow-300' : 'text-white'
+              }
+            >
+              {route.name}
+            </NavLink>
+          ))}
+        </div>
       </div>
     </div>
   )
