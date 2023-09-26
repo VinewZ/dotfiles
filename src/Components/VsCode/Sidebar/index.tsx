@@ -6,16 +6,9 @@ import {
   GitBranch,
   Search,
 } from 'lucide-react'
-import { NavLink } from 'react-router-dom'
+import { PageLinks } from './PageLinks'
 
-type VsCodeSidebarProps = {
-  routes: {
-    path: string
-    name: string
-  }[]
-}
-
-export function VsCodeSidebar({ routes }: VsCodeSidebarProps) {
+export function VsCodeSidebar() {
   return (
     <div
       className="flex h-screen max-h-[70vh] bg-vs-sidebar text-white"
@@ -33,18 +26,8 @@ export function VsCodeSidebar({ routes }: VsCodeSidebarProps) {
       </div>
       <div className="w-full">
         <p className="border-b border-black p-2">Explorer</p>
-        <div className="flex flex-col gap-2 pl-6">
-          {routes.map((route) => (
-            <NavLink
-              to={`${route.path}`}
-              key={route.path}
-              className={(isActive) =>
-                isActive ? 'text-yellow-300' : 'text-white'
-              }
-            >
-              {route.name}
-            </NavLink>
-          ))}
+        <div className="flex flex-col gap-2">
+          <PageLinks />
         </div>
       </div>
     </div>
