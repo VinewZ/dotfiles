@@ -9,7 +9,7 @@ import {
 export function VsCodeFooter() {
   return (
     <div
-      className="flex w-full max-w-7xl items-center gap-1 overflow-hidden rounded-b-lg bg-vs-footer text-xs text-white"
+      className="flex w-full max-w-7xl items-center gap-1 overflow-hidden rounded-b-lg border-t border-black/40 bg-vs-footer text-xs text-white"
       style={{
         gridArea: 'footer',
       }}

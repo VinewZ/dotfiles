@@ -12,7 +12,7 @@ export function VsCodeTopbar() {
 
   return (
     <div
-      className="flex w-full max-w-7xl items-center gap-5 rounded-t-lg bg-vs-topbar px-3 capitalize text-white"
+      className="flex w-full max-w-7xl items-center gap-5 rounded-t-lg border-b border-black/40 bg-vs-topbar px-3 capitalize text-white"
       style={{
         gridArea: 'topbar',
       }}
