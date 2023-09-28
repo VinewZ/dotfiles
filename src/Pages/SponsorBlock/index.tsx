@@ -1,6 +1,5 @@
 import SyntaxHighlighter from 'react-syntax-highlighter'
 import { atelierCaveDark } from 'react-syntax-highlighter/dist/esm/styles/hljs'
-import { VsCode } from '../../Components/VsCode'
 
 export function SponsorBlock() {
   const code = `    {
