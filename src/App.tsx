@@ -3,7 +3,7 @@ import { Router } from './Pages/Router'
 
 export function App() {
   return (
-    <div className="grid h-screen w-screen place-content-center bg-gradient-to-br from-[#614385] to-[#516395]">
+    <div className="grid h-screen w-screen place-content-center bg-gradient-to-r from-slate-900 to-slate-700">
       <VsCode.Root>
         <VsCode.Topbar />
         <VsCode.Sidebar />

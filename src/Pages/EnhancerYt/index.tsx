@@ -1,6 +1,5 @@
 import SyntaxHighlighter from 'react-syntax-highlighter'
 import { atelierCaveDark } from 'react-syntax-highlighter/dist/esm/styles/hljs'
-import { VsCode } from '../../Components/VsCode'
 
 export function EnhancerYt() {
   const code = `    {
@@ -111,14 +110,8 @@ export function EnhancerYt() {
     }`
 
   return (
-    <VsCode.Content>
-      <SyntaxHighlighter
-        language="markdown"
-        style={atelierCaveDark}
-        showLineNumbers
-      >
-        {code}
-      </SyntaxHighlighter>
-    </VsCode.Content>
+    <SyntaxHighlighter language="json" style={atelierCaveDark} showLineNumbers>
+      {code}
+    </SyntaxHighlighter>
   )
 }

@@ -274,14 +274,8 @@ export function SponsorBlock() {
  }`
 
   return (
-    <VsCode.Content>
-      <SyntaxHighlighter
-        language="markdown"
-        style={atelierCaveDark}
-        showLineNumbers
-      >
-        {code}
-      </SyntaxHighlighter>
-    </VsCode.Content>
+    <SyntaxHighlighter language="json" style={atelierCaveDark} showLineNumbers>
+      {code}
+    </SyntaxHighlighter>
   )
 }

@@ -1,6 +1,5 @@
 import SyntaxHighlighter from 'react-syntax-highlighter'
 import { atelierCaveDark } from 'react-syntax-highlighter/dist/esm/styles/hljs'
-import { VsCode } from '../../Components/VsCode'
 
 export function Browser() {
   const code = `
@@ -16,14 +15,12 @@ export function Browser() {
   `
 
   return (
-    <VsCode.Content>
-      <SyntaxHighlighter
-        language="markdown"
-        style={atelierCaveDark}
-        showLineNumbers
-      >
-        {code}
-      </SyntaxHighlighter>
-    </VsCode.Content>
+    <SyntaxHighlighter
+      language="markdown"
+      style={atelierCaveDark}
+      showLineNumbers
+    >
+      {code}
+    </SyntaxHighlighter>
   )
 }

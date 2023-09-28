@@ -4,8 +4,10 @@ import {
   BugPlay,
   File,
   FileJson,
+  FileTerminal,
   GitBranch,
   Search,
+  Terminal,
 } from 'lucide-react'
 import { PageLinks } from './PageLinks'
 
@@ -21,12 +23,12 @@ const pages = [
       {
         pageTitle: 'enhancer-yt.json',
         icon: <FileJson size={16} />,
-        pageRoute: '/enhancer-yt',
+        pageRoute: '/browser/enhancer-yt',
       },
       {
         pageTitle: 'sponsor-block.json',
         icon: <FileJson size={16} />,
-        pageRoute: '/sponsor-block',
+        pageRoute: '/browser/sponsor-block',
       },
     ],
   },
@@ -34,19 +36,14 @@ const pages = [
     pageTab: 'Terminal',
     subPages: [
       {
-        pageTitle: 'browser.md',
-        icon: <File size={16} />,
-        pageRoute: '/browser',
+        pageTitle: 'terminal.md',
+        icon: <Terminal size={16} />,
+        pageRoute: '/terminal',
       },
       {
-        pageTitle: 'enhancer-yt.json',
-        icon: <File size={16} />,
-        pageRoute: '/enhancer-yt',
-      },
-      {
-        pageTitle: 'sponsor-block.json',
-        icon: <File size={16} />,
-        pageRoute: '/sponsor-block',
+        pageTitle: 'omp.md',
+        icon: <FileTerminal size={16} />,
+        pageRoute: '/terminal/omp-config',
       },
     ],
   },
