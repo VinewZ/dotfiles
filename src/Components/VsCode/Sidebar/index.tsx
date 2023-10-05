@@ -47,6 +47,21 @@ const pages = [
       },
     ],
   },
+  {
+    pageTab: 'Curriculum',
+    subPages: [
+      {
+        pageTitle: 'curriculum.pdf - BR',
+        icon: <File size={16} />,
+        pageRoute: '/curriculum/br',
+      },
+      {
+        pageTitle: 'curriculum.pdf - EN',
+        icon: <File size={16} />,
+        pageRoute: '/curriculum/en',
+      },
+    ],
+  },
 ]
 
 export function VsCodeSidebar() {

@@ -4,6 +4,7 @@ import { EnhancerYt } from './EnhancerYt'
 import { SponsorBlock } from './SponsorBlock'
 import { Terminal } from './Terminal'
 import { OmpConfig } from './OmpConfig'
+import { Curriculum } from './Curriculum'
 
 export function Router() {
   return (
@@ -14,6 +15,9 @@ export function Router() {
       <Route path="/browser/sponsor-block" element={<SponsorBlock />} />
       <Route path="/terminal" element={<Terminal />} />
       <Route path="/terminal/omp-config" element={<OmpConfig />} />
+      <Route path="/curriculum" element={<Curriculum />} />
+      <Route path="/curriculum/br" element={<Curriculum />} />
+      <Route path="/curriculum/en" element={<Curriculum />} />
     </Routes>
   )
 }
