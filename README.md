@@ -1,5 +1,5 @@
 
-# Video Gen - Cazamba
+# Config Files
 
 ## Contents
 * [Technologies](#technologies) 
