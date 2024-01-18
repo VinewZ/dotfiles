@@ -1,5 +1,5 @@
 
-# Config Files
+# Dotfiles
 
 ## Contents
 * [Technologies](#technologies) 
@@ -21,7 +21,7 @@ This project was made using the following technologies:
 ### How to run
 ```shell
 # Clone Repository
-$ git clone https://github.com/VinewZ/configs.git
+$ git clone https://github.com/VinewZ/dotfiles.git
 ```
 
 ```shell
